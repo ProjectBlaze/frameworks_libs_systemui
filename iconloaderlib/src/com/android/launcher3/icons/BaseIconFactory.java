@@ -100,8 +100,8 @@ public class BaseIconFactory implements AutoCloseable {
     // Shadow bitmap used as background for theme icons
     private Bitmap mWhiteShadowLayer;
 
-    private Drawable mWrapperIcon;
-    private int mWrapperBackgroundColor = DEFAULT_WRAPPER_BACKGROUND;
+    protected Drawable mWrapperIcon;
+    protected int mWrapperBackgroundColor = DEFAULT_WRAPPER_BACKGROUND;
 
     private static int PLACEHOLDER_BACKGROUND_COLOR = Color.rgb(245, 245, 245);
 
