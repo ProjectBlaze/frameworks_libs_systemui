@@ -101,8 +101,8 @@ public class BaseIconFactory implements AutoCloseable {
     // Shadow bitmap used as background for theme icons
     private Bitmap mWhiteShadowLayer;
 
-    private Drawable mWrapperIcon;
-    private int mWrapperBackgroundColor = DEFAULT_WRAPPER_BACKGROUND;
+    protected Drawable mWrapperIcon;
+    protected int mWrapperBackgroundColor = DEFAULT_WRAPPER_BACKGROUND;
 
     // User badges cached by size, e.g. workspace badge (large) vs widget badge (small)
     private final ArrayMap<Pair<UserHandle, Integer>, Bitmap> mUserBadges = new ArrayMap<>();
