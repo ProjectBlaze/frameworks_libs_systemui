@@ -272,7 +272,7 @@ public abstract class BaseIconCache {
      */
     private void updateSystemState() {
         mLocaleList = mContext.getResources().getConfiguration().getLocales();
-        mSystemState = mLocaleList.toLanguageTags() + "," + Build.VERSION.INCREMENTAL;
+        mSystemState = mLocaleList.toLanguageTags() + "," + String.valueOf(Build.TIME);
         mUserFormatString.clear();
     }
 
